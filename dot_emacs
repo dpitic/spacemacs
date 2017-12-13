@@ -1,0 +1,123 @@
+(require 'package)
+(add-to-list 'package-archives
+	     '("melpa" . "https://melpa.org/packages/"))
+(package-initialize)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(ansi-color-names-vector
+   ["#272822" "#F92672" "#A6E22E" "#E6DB74" "#66D9EF" "#FD5FF0" "#A1EFE4" "#F8F8F2"])
+ '(compilation-message-face (quote default))
+ '(custom-enabled-themes (quote (solarized-dark)))
+ '(custom-safe-themes
+   (quote
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" "345f8f92edc3508574c61850b98a2e0a7a3f5ba3bb9ed03a50f6e41546fe2de0" "1fc1fdf975c8c8c3767c29787a063eee50cbceef903644a0771fa66568ee8777" default)))
+ '(fci-rule-color "#49483E")
+ '(font-use-system-font t)
+ '(highlight-changes-colors (quote ("#FD5FF0" "#AE81FF")))
+ '(highlight-tail-colors
+   (quote
+    (("#49483E" . 0)
+     ("#679A01" . 20)
+     ("#4BBEAE" . 30)
+     ("#1DB4D0" . 50)
+     ("#9A8F21" . 60)
+     ("#A75B00" . 70)
+     ("#F309DF" . 85)
+     ("#49483E" . 100))))
+ '(magit-diff-use-overlays nil)
+ '(package-selected-packages
+   (quote
+    (company-quickhelp clang-format flx-ido flycheck-pos-tip flycheck-irony projectile flycheck yasnippet company-irony-c-headers company-irony irony auto-complete solarized-theme monokai-theme fill-column-indicator dracula-theme)))
+ '(pos-tip-background-color "#A6E22E")
+ '(pos-tip-foreground-color "#272822")
+ '(vc-annotate-background nil)
+ '(vc-annotate-color-map
+   (quote
+    ((20 . "#F92672")
+     (40 . "#CF4F1F")
+     (60 . "#C26C0F")
+     (80 . "#E6DB74")
+     (100 . "#AB8C00")
+     (120 . "#A18F00")
+     (140 . "#989200")
+     (160 . "#8E9500")
+     (180 . "#A6E22E")
+     (200 . "#729A1E")
+     (220 . "#609C3C")
+     (240 . "#4E9D5B")
+     (260 . "#3C9F79")
+     (280 . "#A1EFE4")
+     (300 . "#299BA6")
+     (320 . "#2896B5")
+     (340 . "#2790C3")
+     (360 . "#66D9EF"))))
+ '(vc-annotate-very-old-color nil)
+ '(weechat-color-list
+   (unspecified "#272822" "#49483E" "#F70057" "#F92672" "#86C30D" "#A6E22E" "#BEB244" "#E6DB74" "#40CAE4" "#66D9EF" "#FB35EA" "#FD5FF0" "#74DBCD" "#A1EFE4" "#F8F8F2" "#F8F8F0")))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Ubuntu Mono" :foundry "DAMA" :slant normal :weight normal :height 120 :width normal)))))
+(global-linum-mode t)
+
+;; Editor customisations
+;; Set right margin at column 80
+(setq fci-rule-column 80)
+(column-number-mode t)
+(add-hook 'after-change-major-mode-hook 'fci-mode)
+;; Use company-mode instead of AC; provides function/method signatures.
+;; (add-hook 'after-change-major-mode-hook 'auto-complete-mode)
+;; Set frame width
+;; (add-to-list 'default-frame-alist '(width . 100))
+
+;; Enable Projectile mode globally to provide support for projects
+(projectile-mode)
+
+;; Enhance ido completion with flx-ido
+(require 'flx-ido)
+(ido-mode 1)
+(ido-everywhere 1)
+(flx-ido-mode 1)
+;; Disable ido faces to see flx highlights.
+(setq ido-enable-flex-matching t)
+(setq ido-use-faces nil)
+;; Turn off flx's highlights if you don't want to use them
+;; (setq flx-ido-use-faces nil)
+
+;; C/C++ & Objective-C autocompletion powered by libclang using Irony Mode
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+;; Add company-irony to company backend
+(eval-after-load 'company
+  '(add-to-list 'company-backends '(company-irony-c-headers company-irony)))
+;; Use Company Mode in all buffers
+(add-hook 'after-init-hook 'global-company-mode)
+;; Activate company-quickhelp to provide documentation
+(company-quickhelp-mode 1)
+
+;; Enable code snippets using YASnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+
+;; Flycheck - code syntax checking
+(add-hook 'after-init-hook #'global-flycheck-mode)
+;; Enable flycheck-pos-tip to show errors under point in pos-tip popups
+(with-eval-after-load 'flycheck (flycheck-pos-tip-mode))
+;; Use Flycheck with irony-mode which enables .clang_complete support
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+
+;; Use clang-format to format code; no keybindings are defined by default
+(require 'clang-format)
+(global-set-key (kbd "C-c f") 'clang-format-buffer)
+;; (global-set-key (kbd "C-c i") 'clang-format-region)
+
+(provide '.emacs)
+;;; .emacs ends here
