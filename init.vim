@@ -2,7 +2,27 @@
 let g:spacevim_enable_debug = 1
 let g:spacevim_realtime_leader_guide = 1
 call SpaceVim#layers#load('incsearch')
-call SpaceVim#layers#load('lang#c')
+" Configure autocomplete
+"call SpaceVim#layers#load('autocomplete')
+call SpaceVim#layers#load('autocomplete', {
+        \ 'auto-completion-return-key-behavior' : 'smart',
+        \ 'auto-completion-tab-key-behavior' : 'smart',
+        \ })
+" Enable debug workflow
+call SpaceVim#layers#load('debug')
+" Enable support for git
+call SpaceVim#layers#load('git')
+" Configure c/c++/bojective-c layer
+call SpaceVim#layers#load('lang#c') 
+"call SpaceVim#layers#load('lang#c', {
+""        \ 'enable_libclang' : 1,
+""        \ 'libclang_path' : '/usr/lib/llvm-4.0/lib/libclang.so.1',
+""        \ 'clang_flag' : 1,
+""        \ })
+" Enable gtags
+" call SpaceVim#layers#load('tags')
+" Enable cscope
+call SpaceVim#layers#load('cscope')
 call SpaceVim#layers#load('lang#elixir')
 call SpaceVim#layers#load('lang#go')
 call SpaceVim#layers#load('lang#haskell')
@@ -40,5 +60,13 @@ endif
 let g:clang2_placeholder_next = ''
 let g:clang2_placeholder_prev = ''
 
+" Enable clang
+"let g:neomake_c_enabled_makers = ["clang"]
+"let g:deoplete#sources#clang#autofill = 1
+
+" Configure clang_complete plugin
+let g:clang_library_path='/usr/lib/llvm-4.0/lib/libclang.so.1'
+
 " Display right margin
 set colorcolumn=80
+
