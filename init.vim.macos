@@ -12,11 +12,19 @@ call SpaceVim#layers#load('debug')
 " Enable support for git
 call SpaceVim#layers#load('git')
 " Configure c/c++/bojective-c layer
-call SpaceVim#layers#load('lang#c') 
+call SpaceVim#layers#load('lang#c')
+" lang#c layer config for clang doesn't work.
+" call SpaceVim#layers#load('lang#c', {
+        " \ 'clang_executable': '/usr/bin/clang',
+        " \ 'libclang_path' : '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib',
+        " \ 'clang_flag' : 1,
+        " \ })
 " Enable gtags
 " call SpaceVim#layers#load('tags')
 " Enable cscope
 call SpaceVim#layers#load('cscope')
+" Enable denite; required to support finding in projects.
+call SpaceVim#layers#load('denite')
 call SpaceVim#layers#load('incsearch')
 call SpaceVim#layers#load('lang#c')
 call SpaceVim#layers#load('lang#elixir')
@@ -56,10 +64,10 @@ endif
 let g:clang2_placeholder_next = ''
 let g:clang2_placeholder_prev = ''
 
-" Configure clang_complete plugin
+" Configure clang_complete plugin; lang#c layer config. doesn't work
 let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
 
 " Set SpaceVim GUI font and display right margin
-let g:spacevim_guifont='DejaVu\ Sans\ Mono\ for\ Powerline\ 14'
+"let g:spacevim_guifont='DejaVu\ Sans\ Mono\ for\ Powerline\ 14'
 "let g:spacevim_guifont='Monospace\ Regular\ 14'
 set colorcolumn=80
