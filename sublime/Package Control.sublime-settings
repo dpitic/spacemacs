@@ -1,0 +1,20 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Anaconda",
+		"Clang Format",
+		"Compare Side-By-Side",
+		"DoxyDoc",
+		"EasyClangComplete",
+		"Emacs Pro Essentials",
+		"Git",
+		"Package Control",
+		"SublimeLinter",
+		"SublimeLinter-clang"
+	]
+}
