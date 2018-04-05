@@ -1,8 +1,17 @@
 {
 	"bootstrapped": true,
+
+	// This is requried to enable installation of DoxyDoxygen, otherwise some
+	// TLS error prevents download.
 	"downloader_precedence":
 	{
 		"linux":
+		[
+			"curl",
+			"urllib",
+			"wget"
+		],
+		"osx":
 		[
 			"curl",
 			"urllib",
