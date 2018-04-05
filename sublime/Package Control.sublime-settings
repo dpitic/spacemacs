@@ -1,5 +1,14 @@
 {
 	"bootstrapped": true,
+	"downloader_precedence":
+	{
+		"linux":
+		[
+			"curl",
+			"urllib",
+			"wget"
+		]
+	},
 	"in_process_packages":
 	[
 	],
@@ -9,11 +18,13 @@
 		"Anaconda",
 		"Clang Format",
 		"Compare Side-By-Side",
-		"DoxyDoc",
+		"DoxyDoxygen",
 		"EasyClangComplete",
 		"Emacs Pro Essentials",
 		"Git",
 		"Package Control",
+		"Seti_UI",
+		"Seti_UX",
 		"SublimeLinter",
 		"SublimeLinter-clang"
 	]
