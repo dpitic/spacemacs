@@ -1,0 +1,13 @@
+{
+	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
+	"Seti_tabs_small": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"rulers":
+	[
+		80
+	],
+	"theme": "Seti_orig.sublime-theme"
+}

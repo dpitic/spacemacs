@@ -1,0 +1,37 @@
+{
+	"bootstrapped": true,
+	"downloader_precedence":
+	{
+		"linux":
+		[
+			"curl",
+			"urllib",
+			"wget"
+		],
+		"osx":
+		[
+			"curl",
+			"urllib",
+			"wget"
+		]
+	},
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Anaconda",
+		"Clang Format",
+		"Compare Side-By-Side",
+		"DoxyDoxygen",
+		"EasyClangComplete",
+		"Emacs Pro Essentials",
+		"Git",
+		"Package Control",
+		"Seti_UI",
+		"Seti_UX",
+		"SublimeLinter",
+		"SublimeLinter-clang"
+	]
+}
