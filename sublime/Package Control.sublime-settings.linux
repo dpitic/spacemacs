@@ -28,12 +28,14 @@
 		"EasyClangComplete",
 		"Emacs Pro Essentials",
 		"Git",
+		"NASM x86 Assembly",
 		"Package Control",
 		"Seti_UI",
 		"Seti_UX",
 		"Solarized Color Scheme",
 		"SublimeGDB",
 		"SublimeLinter",
-		"SublimeLinter-clang"
+		"SublimeLinter-clang",
+		"x86 and x86_64 Assembly"
 	]
 }

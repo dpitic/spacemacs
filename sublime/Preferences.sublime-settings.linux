@@ -4,7 +4,8 @@
 	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
+		"x86 and x86_64 Assembly"
 	],
 	"rulers":
 	[
