@@ -7,9 +7,12 @@
 		"Vintage",
 		"x86 and x86_64 Assembly"
 	],
+	// Columns in which to display vertical rulers
 	"rulers":
 	[
 		80
 	],
+	// If enabled, will highlight any line with a caret
+	"highlight_line": true,
 	"theme": "Seti_orig.sublime-theme"
 }
