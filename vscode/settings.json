@@ -1,0 +1,13 @@
+{
+    // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty
+    "editor.rulers": [
+        80
+    ],
+    // Configure whether you receive automatic updates from an update channel. Requires a restart after change.
+    "update.channel": "none",
+    "workbench.colorTheme": "Seti",
+    // Name of the predefined style used as a fallback in case clang-format is invoked with style "file" but the .clang-format file is not found. Possible values are Visual Studio, LLVM, Google, Chromium, Mozilla, WebKit, none, or use "{key: value, ...}" to set specific parameters, e.g.: "{ BasedOnStyle: LLVM, IndentWidth: 8 }"
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    // The full path of the clang-format executable.
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format"
+}
