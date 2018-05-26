@@ -28,6 +28,8 @@
 		"EasyClangComplete",
 		"Emacs Pro Essentials",
 		"Git",
+		"Guna",
+		"Javascript Beautify",
 		"NASM x86 Assembly",
 		"Package Control",
 		"Seti_UI",
@@ -36,6 +38,6 @@
 		"SublimeGDB",
 		"SublimeLinter",
 		"SublimeLinter-clang",
-		"x86 and x86_64 Assembly"
+		"Theme - Seti Monokai"
 	]
 }

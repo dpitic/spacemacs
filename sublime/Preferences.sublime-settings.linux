@@ -1,7 +1,16 @@
 {
 	"Seti_tabs_small": true,
 	"Seti_teal_tab": true,
-	"color_scheme": "Packages/Color Scheme - Default/Mariana.tmTheme",
+	"color_scheme": "Packages/Guna/themes/Guna.tmTheme",
+	"gn_overlay_scroll_bars": true,
+	"gn_sidebar_box": true,
+	"gnc_001": false,
+	"gnc_002": true,
+	"gnc_a10": true,
+	"gnc_m09": true,
+	"gnc_m11": true,
+	"gni_003": false,
+	"gnwidg1": true,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -11,6 +20,6 @@
 	[
 		80
 	],
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Guna.sublime-theme",
 	"update_check": false
 }
