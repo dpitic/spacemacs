@@ -1,0 +1,21 @@
+{
+  "For_Loop": {
+    "prefix": "for",
+    "body": ["for (const ${2:element} of ${1:array}) {", "\t$0", "}"],
+    "description": "For Loop"
+  },
+  "Func_Doc": {
+    "prefix": "doxy",
+    "body": [
+      "/**",
+      " * @brief    ${1:function description}",
+      " *",
+      " * @details  ${2:detailed description}",
+      " *",
+      " * @param    ${3:param}",
+      " * @return   ${4:return type}",
+      " */"
+    ],
+    "description": "Doxygen C function documentation"
+  }
+}
