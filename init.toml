@@ -15,14 +15,14 @@
     background = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
-    guicolors = true
+    enable_guicolors = true
     # Disable statusline separator, if you want to use other value, please
     # install nerd fonts
     statusline_separator = "arrow"
     statusline_inactive_separator = "arrow"
     buffer_index_type = 4
-    filetype_icon = true
-    statusline_display_mode = false
+    enable_tabline_filetype_icon = true
+    enable_statusline_display_mode = false
     # Disable vimfiler in welcome window to speed up start up time
     enable_vimfiler_welcome = 0
 
@@ -37,9 +37,9 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
-# Enable unite layer for fuzzy finding
+# Enable denite layer for fuzzy finding; unite is obsolete.
 [[layers]]
-name = 'unite'
+name = 'denite'
 
 # Enable c/c++/objective-c layer
 [[layers]]
