@@ -46,3 +46,7 @@ name = 'denite'
 # Enable c/c++/objective-c layer
 [[layers]]
 name = 'lang#c'
+
+# Enable Golang layer
+[[layers]]
+name = 'lang#go'
