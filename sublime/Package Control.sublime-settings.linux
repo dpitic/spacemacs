@@ -29,9 +29,11 @@
 		"Emacs Pro Essentials",
 		"Git",
 		"Guna",
+		"HexViewer",
 		"Javascript Beautify",
 		"LSP",
 		"NASM x86 Assembly",
+		"orgmode",
 		"Package Control",
 		"Seti_UI",
 		"Seti_UX",
@@ -39,6 +41,7 @@
 		"SublimeGDB",
 		"SublimeLinter",
 		"SublimeLinter-clang",
-		"Theme - Seti Monokai"
+		"Theme - Seti Monokai",
+		"x86 and x86_64 Assembly"
 	]
 }
