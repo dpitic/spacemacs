@@ -1,6 +1,10 @@
 {
-	"color_scheme": "Packages/Seti_UX/Seti.tmTheme",
 	"Seti_tabs_small": true,
+	"color_scheme": "Packages/Guna/themes/Guna.tmTheme",
+	"gn_overlay_scroll_bars": true,
+	"gn_sidebar_box": true,
+	"gnwidg1": true,
+	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -9,5 +13,6 @@
 	[
 		80
 	],
-	"theme": "Seti_orig.sublime-theme"
+	"theme": "Guna.sublime-theme",
+	"update_check": false
 }
