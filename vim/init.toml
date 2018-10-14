@@ -25,10 +25,10 @@
     enable_statusline_display_mode = false
     # Disable vimfiler in welcome window to speed up start up time
     enable_vimfiler_welcome = 0
-    # Call custom bootstrap function
-    bootstrap_after = "myspacevim#after"
     # Custom GUI font
     guifont = 'Droid Sans Mono for Powerline Plus Nerd File Types Mono'
+    # Call custom bootstrap function
+    bootstrap_after = "myspacevim#after"
 
 # Enable autocomplete layer
 [[layers]]
@@ -41,7 +41,7 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
-# Enable denite layer for fuzzy finding: unite is obsolete
+# Enable denite layer for fuzzy finding; unite is obsolete.
 [[layers]]
 name = 'denite'
 
@@ -52,3 +52,7 @@ name = 'lang#c'
 # Enable Golang layer
 [[layers]]
 name = 'lang#go'
+
+# Enable Python layer
+[[layers]]
+name = 'lang#python'
