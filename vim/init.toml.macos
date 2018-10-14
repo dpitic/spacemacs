@@ -50,3 +50,7 @@ name = 'lang#c'
 # Enable Golang layer
 [[layers]]
 name = 'lang#go'
+
+# Enable Python layer
+[[layers]]
+name = 'lang#python'
