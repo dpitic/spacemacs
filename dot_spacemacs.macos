@@ -334,8 +334,13 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   ;; Show right margin
   (add-hook 'after-change-major-mode-hook 'fci-mode)
+  ;; Configure Python virtual environments
+  (setenv "WORKON_HOME" "~/.conda/envs")
   ;; Set Python interpreter (python | python2 | python3)
-  ;; (setq python-shell-interpreter "python3")
+  (setq python-shell-interpreter "python3")
+  ;; Fix default Python shell arguments to start IPython
+  (setq python-shell-interpreter-args "-m IPython --simple-prompt -i")
+  ;; (setq python-shell-interpreter-args "")
   ;; Set title bars to dark.
   ;; (ref: https://github.com/d12frosted/homebrew-emacs-plus)
   (add-to-list 'default-frame-alist
