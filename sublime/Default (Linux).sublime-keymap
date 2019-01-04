@@ -1,7 +1,7 @@
 [
 	{ "keys": ["ctrl+\\"], "command": "toggle_side_bar" },
 	// Change due to conflict with i3 wm
-	{ "keys": ["super+alt+m"], "command": "toggle_menu" },
+	{ "keys": ["super+shift+m"], "command": "toggle_menu" },
 	//
 	// Emacs Pro Essentials overrides
 	//
