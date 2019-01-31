@@ -4,11 +4,13 @@
 	// { "keys": ["super+shift+m"], "command": "toggle_menu" },
 	// For GNOME and others (clash on awesome)
 	// { "keys": ["super+ctrl+m"], "command": "toggle_menu" },
-	// For Awesome
+	// For Awesome and GNOME and KDE
 	{ "keys": ["alt+m"], "command": "toggle_menu" },
+	// For KDE
+	// { "keys": ["ctrl+alt+m"], "command": "toggle_menu" },
 	//
 	// Emacs Pro Essentials overrides
 	//
-	{ "keys": ["ctrl+x", "ctrl+f"], "command": "prompt_open_file" },
+	// { "keys": ["ctrl+x", "ctrl+f"], "command": "prompt_open_file" },
 	{ "keys": ["ctrl+x", "ctrl+b"], "command": "show_overlay", "args": {"overlay": "goto", "show_files": true} }
 ]
