@@ -335,6 +335,10 @@ you should place your code here."
   (setq python-shell-interpreter "python")
   ;; Fix default Python shell arguments to start IPython
   (setq python-shell-interpreter-args "-m IPython --simple-prompt -i")
+  ;; Invoke company-complete
+  (add-hook 'company-mode-hook
+            (lambda()
+              (global-set-key (kbd "S-SPC") 'company-complete)))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
