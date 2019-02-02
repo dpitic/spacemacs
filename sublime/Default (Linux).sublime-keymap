@@ -4,7 +4,7 @@
 	// { "keys": ["super+shift+m"], "command": "toggle_menu" },
 	// For GNOME and others (clash on awesome)
 	// { "keys": ["super+ctrl+m"], "command": "toggle_menu" },
-	// For Awesome and GNOME and KDE
+	// For Awesome and GNOME and KDE and XFCE
 	{ "keys": ["alt+m"], "command": "toggle_menu" },
 	// For KDE
 	// { "keys": ["ctrl+alt+m"], "command": "toggle_menu" },
