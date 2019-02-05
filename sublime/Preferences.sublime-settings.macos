@@ -1,5 +1,6 @@
 {
 	"Seti_tabs_small": true,
+	"Seti_teal_tab": true,
 	"color_scheme": "Packages/Guna/themes/Guna.tmTheme",
 	"gn_overlay_scroll_bars": true,
 	"gn_sidebar_box": true,
