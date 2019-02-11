@@ -14,6 +14,5 @@
 	[
 		80
 	],
-	"theme": "Guna.sublime-theme",
-	"update_check": false
+	"theme": "Guna.sublime-theme"
 }
