@@ -25,6 +25,8 @@
     enable_statusline_display_mode = false
     # Disable vimfiler in welcome window to speed up start up time
     enable_vimfiler_welcome = 0
+    # Custom GUI font
+    guifont = 'SauceCodePro Nerd Font'
     # Call custom bootstrap function
     bootstrap_after = "myspacevim#after"
     
