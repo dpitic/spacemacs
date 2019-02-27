@@ -331,6 +331,8 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   ;; Show right margin
   (add-hook 'after-change-major-mode-hook 'fci-mode)
+  ;; Configure Python virtual environments
+  (setenv "WORKON_HOME" "~/.conda/envs")
   ;; Set Python interpreter (python | python2 | python3)
   (setq python-shell-interpreter "python")
   ;; Fix default Python shell arguments to start IPython
