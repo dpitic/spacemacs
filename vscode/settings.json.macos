@@ -1,0 +1,35 @@
+{
+    // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty
+    "editor.rulers": [
+        80
+    ],
+    "workbench.colorTheme": "Material Theme",
+    // Name of the predefined style used as a fallback in case clang-format is invoked with style "file" but the .clang-format file is not found. Possible values are Visual Studio, LLVM, Google, Chromium, Mozilla, WebKit, none, or use "{key: value, ...}" to set specific parameters, e.g.: "{ BasedOnStyle: LLVM, IndentWidth: 8 }"
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    // The full path of the clang-format executable.
+    "C_Cpp.clang_format_path": "/usr/local/bin/clang-format",
+    // Terminal font compatible with Powerline
+    "terminal.integrated.fontFamily": "Menlo for Powerline",
+    "workbench.colorCustomizations": {
+        "activityBarBadge.background": "#00BCD4",
+        "list.activeSelectionForeground": "#00BCD4",
+        "list.inactiveSelectionForeground": "#00BCD4",
+        "list.highlightForeground": "#00BCD4",
+        "scrollbarSlider.activeBackground": "#00BCD450",
+        "editorSuggestWidget.highlightForeground": "#00BCD4",
+        "textLink.foreground": "#00BCD4",
+        "progressBar.background": "#00BCD4",
+        "pickerGroup.foreground": "#00BCD4",
+        "tab.activeBorder": "#00BCD4",
+        "notificationLink.foreground": "#00BCD4",
+        "editorWidget.resizeBorder": "#00BCD4",
+        "editorWidget.border": "#00BCD4",
+        "settings.modifiedItemIndicator": "#00BCD4",
+        "settings.headerForeground": "#00BCD4",
+        "panelTitle.activeBorder": "#00BCD4",
+        "breadcrumb.activeSelectionForeground": "#00BCD4",
+        "menu.selectionForeground": "#00BCD4",
+        "menubar.selectionForeground": "#00BCD4"
+    },
+    "materialTheme.accent": "Cyan"
+}
