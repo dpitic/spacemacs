@@ -12,7 +12,7 @@
     # if you want to use more colorscheme, please load the colorscheme
     # layer
     colorscheme = "gruvbox"
-    background = "dark"
+    colorscheme_bg = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
     enable_guicolors = true
@@ -22,14 +22,14 @@
     statusline_inactive_separator = "arrow"
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
-    enable_statusline_display_mode = false
+    enable_statusline_mode = false
     # Disable vimfiler in welcome window to speed up start up time
     enable_vimfiler_welcome = 0
     # Custom GUI font
     guifont = 'SauceCodePro Nerd Font'
     # Call custom bootstrap function
     bootstrap_after = "myspacevim#after"
-    
+
 # Enable autocomplete layer
 [[layers]]
 name = 'autocomplete'
