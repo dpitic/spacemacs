@@ -335,7 +335,7 @@ you should place your code here."
   ;; Show right margin
   (add-hook 'after-change-major-mode-hook 'fci-mode)
   ;; Configure Python virtual environments
-  (setenv "WORKON_HOME" "~/.conda/envs")
+  (setenv "WORKON_HOME" "/usr/local/anaconda3/envs")
   ;; Set Python interpreter (python | python2 | python3)
   (setq python-shell-interpreter "python3")
   ;; Fix default Python shell arguments to start IPython
@@ -368,6 +368,8 @@ you should place your code here."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(company-tooltip-common ((t (:inherit company-tooltip :weight bold :underline nil))))
- '(company-tooltip-common-selection ((t (:inherit company-tooltip-selection :weight bold :underline nil)))
-)
+ '(company-tooltip-common
+   ((t (:inherit company-tooltip :weight bold :underline nil))))
+ '(company-tooltip-common-selection
+   ((t (:inherit company-tooltip-selection :weight bold :underline nil))))
+ )
