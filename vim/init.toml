@@ -25,8 +25,10 @@
     enable_statusline_mode = false
     # Disable vimfiler in welcome window to speed up start up time
     enable_vimfiler_welcome = 0
-    # Custom GUI font
+    # Default GUI font
     guifont = 'SauceCodePro Nerd Font Mono'
+    # Custom GUI font
+    # guifont = 'Droid Sans Mono for Powerline Plus Nerd File Types Mono'
     # Call custom bootstrap function
     bootstrap_after = "myspacevim#after"
 
@@ -44,6 +46,10 @@ default_height = 30
 # Enable denite layer for fuzzy finding; unite is obsolete.
 [[layers]]
 name = 'denite'
+
+# Enable Language Server Protocol layer
+[[layers]]
+name = 'lsp'
 
 # Enable c/c++/objective-c layer
 [[layers]]
