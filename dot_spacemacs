@@ -58,18 +58,21 @@ values."
      (shell :variables
             shell-default-height 30
             shell-default-position 'bottom)
-     spell-checking
+     (spell-checking :variables
+                     ;; Enable auto-completion popup when point is idle
+                     enable-flyspell-auto-completion t)
      syntax-checking
      version-control
      (c-c++ :variables
             c-c++-enable-clang-support t
             clang-format-on-save t)
      semantic
+     ;; Disabled themes due to errors on startup from missing themes
      ;; themes-megapack
      cscope
      ;; (colors :variables
-     ;;        ;; Colour identifiers (variables | all)
-     ;;        colors-colorize-identifiers 'variables)
+     ;;         ;; Colour identifiers (variables | all)
+     ;;         colors-colorize-identifiers 'variables)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
