@@ -1,0 +1,10 @@
+{
+	"256color": true,
+	"theme": "spacegray",
+	"unix_term": "xterm-256color",
+	"view_settings":
+	{
+		"font_face": "Ubuntu Mono derivative Powerline",
+		"font_size": 14
+	}
+}
