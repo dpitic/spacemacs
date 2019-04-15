@@ -1,0 +1,49 @@
+"*":
+  "atom-beautify":
+    c:
+      default_beautifier: "clang-format"
+    cpp:
+      default_beautifier: "clang-format"
+    general:
+      _analyticsUserId: "705dc011-6fbd-4e91-b0aa-4415d817d24a"
+    objectivec:
+      default_beautifier: "clang-format"
+  "autocomplete-python":
+    useKite: false
+  core:
+    allowPendingPaneItems: false
+    disabledPackages: [
+      "linter"
+      "atom-typescript"
+    ]
+    telemetryConsent: "limited"
+  editor:
+    fontSize: 12
+    scrollPastEnd: true
+    showIndentGuide: true
+  "exception-reporting":
+    userId: "5dd2fbbe-3973-66ac-35b6-f4738a30c3e0"
+  "go-plus":
+    panel:
+      currentHeight: "42.43827160493827vh"
+  "ide-python":
+    python: "/Users/dpitic/anaconda3/envs/ml/bin/python"
+  "linter-ui-default":
+    panelHeight: 300
+  minimap:
+    plugins:
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+  "platformio-ide-terminal":
+    style:
+      fontFamily: "Ubuntu Mono derivative Powerline"
+      fontSize: "14"
+      theme: "one-dark"
+    toggles:
+      autoClose: true
+  script:
+    cwdBehavior: "Directory of the script"
+  "seti-ui":
+    compactView: true
+  welcome:
+    showOnStartup: false
