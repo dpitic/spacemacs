@@ -1,16 +1,23 @@
 {
-    // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty
+    // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty.
     "editor.rulers": [
         80
     ],
-    // Configure whether you receive automatic updates from an update channel. Requires a restart after change.
-    "update.mode": "none",
-    "workbench.colorTheme": "Seti",
+    // Configure whether you receive automatic updates from an update channel. Requires a restart after change. The updates are fetched from a Microsoft online service.
+    "update.channel": "none",
     // Name of the predefined style used as a fallback in case clang-format is invoked with style "file" but the .clang-format file is not found. Possible values are Visual Studio, LLVM, Google, Chromium, Mozilla, WebKit, none, or use "{key: value, ...}" to set specific parameters, e.g.: "{ BasedOnStyle: LLVM, IndentWidth: 8 }"
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
     // The full path of the clang-format executable.
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "eq-material-theme-icons",
     "window.menuBarVisibility": "toggle",
     // Terminal font compatible with Powerline
-    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono"
+    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+    // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `files.exclude` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "**/aclImdb": true
+    }
 }
