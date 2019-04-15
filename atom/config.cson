@@ -1,0 +1,30 @@
+"*":
+  "atom-beautify":
+    c:
+      beautify_on_save: true
+      default_beautifier: "clang-format"
+    python:
+      beautify_on_save: true
+  "autocomplete-python":
+    useKite: false
+  core:
+    disabledPackages: [
+      "linter"
+      "atom-typescript"
+    ]
+    telemetryConsent: "limited"
+  "exception-reporting":
+    userId: "20b22542-4648-49c6-ae38-d24bcddb4382"
+  "ide-python": {}
+  "linter-ui-default":
+    panelHeight: 300
+  minimap:
+    plugins:
+      "split-diff": true
+      "split-diffDecorationsZIndex": 0
+  "platformio-ide-terminal":
+    style:
+      fontFamily: "Ubuntu Mono derivative Powerline"
+      theme: "one-dark"
+  script:
+    cwdBehavior: "Directory of the script"
