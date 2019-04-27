@@ -51,6 +51,7 @@ values."
      better-defaults
      emacs-lisp
      git
+     github
      markdown
      (org :variables
           org-enable-github-support t
