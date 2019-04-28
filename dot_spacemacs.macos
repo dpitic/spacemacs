@@ -355,7 +355,7 @@ you should place your code here."
             (lambda()
               (global-set-key (kbd "S-SPC") 'company-complete)))
   ;; Org mode agenda files global directory
-  (setq org-agenda-files '("~/org"))
+  (setq org-agenda-files '("~/org/"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
