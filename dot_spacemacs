@@ -349,6 +349,9 @@ you should place your code here."
               (global-set-key (kbd "S-SPC") 'company-complete)))
   ;; Org mode agenda files global directory
   (setq org-agenda-files '("~/org/"))
+  ;; Org mode global defaults
+  (setq org-directory "~/org"
+        org-default-notes-file (concat org-directory "/notes.org"))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
