@@ -9,4 +9,6 @@ func! myspacevim#after() abort
   set cc=80
   " Set default assembly file syntax to nasm
   au BufRead,BufNewFile *.asm set filetype=nasm
+  " Automatically change directory to buffer file
+  set autochdir
 endf
