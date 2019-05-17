@@ -26,7 +26,7 @@
     # Disable vimfiler in welcome window to speed up start up time
     enable_vimfiler_welcome = 0
     # Default GUI font
-    guifont = 'SauceCodePro Nerd Font Mono'
+    guifont = 'SauceCodePro Nerd Font'
     # Custom GUI font
     # guifont = 'Droid Sans Mono for Powerline Plus Nerd File Types Mono'
     # Call custom bootstrap function
