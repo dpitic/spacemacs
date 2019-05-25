@@ -72,9 +72,9 @@ values."
      ;; Disabled themes due to errors on startup from missing themes
      ;; themes-megapack
      cscope
-     ;; (colors :variables
-     ;;         ;; Colour identifiers (variables | all)
-     ;;         colors-colorize-identifiers 'variables)
+     (colors :variables
+             ;; Colour identifiers (variables | all)
+             colors-colorize-identifiers 'variables)
      csv
      )
    ;; List of additional packages that will be installed without being
