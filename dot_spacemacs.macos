@@ -58,6 +58,9 @@ values."
           org-projectile-file "TODOs.org"
           org-startup-indented t)
      (shell :variables
+            shell-protect-eshell-prompt nil
+            shell-default-shell 'eshell
+            shell-default-term-shell "/usr/local/bin/bash"
             shell-default-height 30
             shell-default-position 'bottom)
      (spell-checking :variables
@@ -72,9 +75,9 @@ values."
      ;; Disabled themes due to errors on startup from missing themes
      ;; themes-megapack
      cscope
-     ;; (colors :variables
-     ;;         ;; Colour identifiers (variables | all)
-     ;;         colors-colorize-identifiers 'variables)
+     (colors :variables
+             ;; Colour identifiers (variables | all)
+             colors-colorize-identifiers 'variables)
      csv
      )
    ;; List of additional packages that will be installed without being
@@ -341,7 +344,7 @@ you should place your code here."
   ;; Configure Python virtual environments
   (setenv "WORKON_HOME" "~/.conda/envs")
   ;; Set Python interpreter (python | python2 | python3)
-  (setq python-shell-interpreter "python3")
+  ;; (setq python-shell-interpreter "python3")
   ;; Fix default Python shell arguments to start IPython
   (setq python-shell-interpreter-args "-m IPython --simple-prompt -i")
   ;; (setq python-shell-interpreter-args "")
