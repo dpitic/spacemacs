@@ -13,15 +13,36 @@
     "C_Cpp.clang_format_fallbackStyle": "LLVM",
     // The full path of the clang-format executable.
     "C_Cpp.clang_format_path": "/usr/bin/clang-format",
-    "workbench.colorTheme": "Material Theme",
-    "workbench.iconTheme": "eq-material-theme-icons",
-    "window.menuBarVisibility": "toggle",
+    // Control the visibility of the menu bar. A setting of 'toggle' means that the menu bar is hidden and a single press of the Alt key will show it. By default, the menu bar will be visible, unless the window is full screen.
+    //  - default: Menu is only hidden in full screen mode.
+    //  - visible: Menu is always visible even in full screen mode.
+    //  - toggle: Menu is hidden but can be displayed via Alt key.
+    //  - hidden: Menu is always hidden.
+    //  - compact: Menu is displayed as a compact button in the sidebar. This value is ignored when 'window.titleBarStyle' is 'native'.
+    "window.menuBarVisibility": "visible",
     // Terminal font compatible with Powerline
-    "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+    // "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
+    "terminal.integrated.fontFamily": "Fira Code",
+    // Controls the font family.
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    // Configures font ligatures.
+    "editor.fontLigatures": true,
     // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `files.exclude` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).
     "search.exclude": {
         "**/node_modules": true,
         "**/bower_components": true,
         "**/aclImdb": true
-    }
+    },
+    // Specifies the Wijmo theme used to style the preview grid.
+    // "csv-preview.theme": "superhero",
+    // Controls how to open items in trees and lists using the mouse (if supported). For parents with children in trees, this setting will control if a single click expands the parent or a double click. Note that some trees and lists might choose to ignore this setting if it is not applicable. 
+    "workbench.list.openMode": "doubleClick",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Ayu Dark",
+    // Adjust the appearance of the window title bar. On Linux and Windows, this setting also affects the application and context menu appearances. Changes require a full restart to apply.
+    "window.titleBarStyle": "custom",
+    // Path to the conda executable to use for activation (version 4.4+).
+    // "python.condaPath": "/opt/anaconda/condabin/conda",
+    // Path to folder with a list of Virtual Environments (e.g. ~/.pyenv, ~/Envs, ~/.virtualenvs).
+    "python.venvPath": "~/.conda/envs"
 }
