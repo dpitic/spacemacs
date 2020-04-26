@@ -20,11 +20,14 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AdvancedNewFile",
 		"Anaconda",
+		"ayu",
 		"Clang Format",
 		"Color Highlight",
 		"Compare Side-By-Side",
+		"Conda",
 		"Dotfiles Syntax Highlighting",
 		"DoxyDoxygen",
 		"EasyClangComplete",
@@ -46,8 +49,8 @@
 		"SublimeLinter-clang",
 		"SublimeREPL",
 		"Terminus",
-		"TypeScript",
 		"Theme - Seti Monokai",
+		"TypeScript",
 		"x86 and x86_64 Assembly"
 	]
 }
