@@ -24,7 +24,12 @@
     // "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
     "terminal.integrated.fontFamily": "Fira Code Medium",
     // Controls the font family.
-    "editor.fontFamily": "'Fira Code Medium', 'Jetbrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.fontFamily": "'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    // "editor.fontFamily": "'Fira Code Medium', 'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    // "editor.fontFamily": "'Meslo LG S for Powerline', 'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    // "editor.fontFamily": "'Ubuntu Mono derivative Powerline', 'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    // Font size on required for Ubuntu Mono derivative Powerline font
+    // "editor.fontSize": 16,
     // Configures font ligatures.
     "editor.fontLigatures": true,
     // Controls the maximum amount of lines the terminal keeps in its buffer.
@@ -38,7 +43,7 @@
     // Controls how to open items in trees and lists using the mouse (if supported). For parents with children in trees, this setting will control if a single click expands the parent or a double click. Note that some trees and lists might choose to ignore this setting if it is not applicable. 
     "workbench.list.openMode": "doubleClick",
     "workbench.iconTheme": "ayu",
-    "workbench.colorTheme": "Ayu Dark",
+    "workbench.colorTheme": "Ayu Mirage",
     // Adjust the appearance of the window title bar. On Linux and Windows, this setting also affects the application and context menu appearances. Changes require a full restart to apply.
     "window.titleBarStyle": "custom",
     // Path to the conda executable to use for activation (version 4.4+).
@@ -51,5 +56,5 @@
     "vsicons.dontShowNewVersionMessage": true,
     "python.jediEnabled": false,
     "gitlens.views.repositories.files.layout": "list",
-    "vsonline.accountProvider": "Microsoft"
+    "codespaces.accountProvider": "Microsoft"
 }
