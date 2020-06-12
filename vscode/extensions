@@ -6,9 +6,14 @@ eamodio.gitlens
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
 formulahendry.code-runner
+fwcd.kotlin
+GitHub.github-vscode-theme
+golang.Go
 GrapeCity.gc-excelviewer
 lfs.vscode-emacs-friendly
 llvm-vs-code-extensions.vscode-clangd
+mechatroner.rainbow-csv
+monokai.theme-monokai-pro-vscode
 ms-python.anaconda-extension-pack
 ms-python.python
 ms-vscode-remote.remote-containers
@@ -22,7 +27,9 @@ ms-vscode.Go
 ms-vsonline.vsonline
 patbenatar.advanced-new-file
 redhat.java
+redhat.vscode-xml
 redhat.vscode-yaml
+rogalmic.bash-debug
 teabyii.ayu
 VisualStudioExptTeam.vscodeintellicode
 vscjava.vscode-java-debug
