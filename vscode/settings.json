@@ -1,4 +1,8 @@
 {
+    // List of experiment to opt into. If empty, user is assigned the default experiment groups. See https://github.com/microsoft/vscode-python/wiki/Experiments for more details.
+    "python.experiments.optInto": [
+        "DeprecatePythonPath - experiment"
+    ],
     // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty.
     "editor.rulers": [
         80
@@ -23,17 +27,21 @@
     // Terminal font compatible with Powerline
     // "terminal.integrated.fontFamily": "SauceCodePro Nerd Font Mono",
     "terminal.integrated.fontFamily": "Fira Code Medium",
+    // Controls the font size in pixels of the terminal.
+    "terminal.integrated.fontSize": 13,
     // Controls the font family.
     "editor.fontFamily": "'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     // "editor.fontFamily": "'Fira Code Medium', 'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     // "editor.fontFamily": "'Meslo LG S for Powerline', 'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     // "editor.fontFamily": "'Ubuntu Mono derivative Powerline', 'JetBrains Mono Medium', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    // Font size on required for Ubuntu Mono derivative Powerline font
+    // Font size only required for Ubuntu Mono derivative Powerline font
     // "editor.fontSize": 16,
+    // Controls the font size in pixels. (13 recommended for JetBrains Mono)
+    "editor.fontSize": 13,
     // Configures font ligatures.
     "editor.fontLigatures": true,
     // Controls the maximum amount of lines the terminal keeps in its buffer.
-    "terminal.integrated.scrollback": 2000,
+    "terminal.integrated.scrollback": 4000,
     // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `files.exclude` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).
     "search.exclude": {
         "**/node_modules": true,
@@ -42,8 +50,12 @@
     },
     // Controls how to open items in trees and lists using the mouse (if supported). For parents with children in trees, this setting will control if a single click expands the parent or a double click. Note that some trees and lists might choose to ignore this setting if it is not applicable. 
     "workbench.list.openMode": "doubleClick",
+    // Controls whether opened editors show as preview. Preview editors are reused until they are explicitly set to be kept open (e.g. via double click or editing) and show up with an italic font style.
+    "workbench.editor.enablePreview": false,
+    // Controls whether editors opened from Quick Open show as preview. Preview editors are reused until they are explicitly set to be kept open (e.g. via double click or editing).
+    "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Gruvbox Material Dark",
     // Adjust the appearance of the window title bar. On Linux and Windows, this setting also affects the application and context menu appearances. Changes require a full restart to apply.
     "window.titleBarStyle": "custom",
     // Path to the conda executable to use for activation (version 4.4+).
@@ -54,7 +66,9 @@
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "java.semanticHighlighting.enabled": true,
     "vsicons.dontShowNewVersionMessage": true,
-    "python.jediEnabled": false,
     "gitlens.views.repositories.files.layout": "list",
-    "codespaces.accountProvider": "Microsoft"
+    "codespaces.accountProvider": "Microsoft",
+    "python.languageServer": "Pylance",
+    "gruvboxMaterial.colorfulSyntax": true,
+    "python.showStartPage": false
 }
