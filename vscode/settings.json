@@ -56,6 +56,8 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
     "workbench.colorTheme": "Gruvbox Material Dark",
+    // Enabling this option will cause more tokens to be colored. By default, only the minimum but necessary tokens will be colored.
+    "gruvboxMaterial.colorfulSyntax": true,
     // Adjust the appearance of the window title bar. On Linux and Windows, this setting also affects the application and context menu appearances. Changes require a full restart to apply.
     "window.titleBarStyle": "custom",
     // Path to the conda executable to use for activation (version 4.4+).
@@ -69,6 +71,5 @@
     "gitlens.views.repositories.files.layout": "list",
     "codespaces.accountProvider": "Microsoft",
     "python.languageServer": "Pylance",
-    "gruvboxMaterial.colorfulSyntax": true,
     "python.showStartPage": false
 }
