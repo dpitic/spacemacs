@@ -1,8 +1,4 @@
 {
-    // List of experiment to opt into. If empty, user is assigned the default experiment groups. See https://github.com/microsoft/vscode-python/wiki/Experiments for more details.
-    "python.experiments.optInto": [
-        "DeprecatePythonPath - experiment"
-    ],
     // Render vertical rulers after a certain number of monospace characters. Use multiple values for multiple rulers. No rulers are drawn if array is empty.
     "editor.rulers": [
         80
@@ -41,7 +37,13 @@
     // Configures font ligatures.
     "editor.fontLigatures": true,
     // Controls the maximum amount of lines the terminal keeps in its buffer.
-    "terminal.integrated.scrollback": 4000,
+    // Format a file on save. A formatter must be available, the file must not be saved after delay, and the editor must not be shutting down.
+    "editor.formatOnSave": true,
+    // Controls if format on save formats the whole file or only modifications. Only applies when `editor.formatOnSave` is `true`.
+    //  - file: Format the whole file.
+    //  - modifications: Format modifications (requires source control).
+    "editor.formatOnSaveMode": "modifications",
+    "terminal.integrated.scrollback": 10000,
     // Configure glob patterns for excluding files and folders in searches. Inherits all glob patterns from the `files.exclude` setting. Read more about glob patterns [here](https://code.visualstudio.com/docs/editor/codebasics#_advanced-search-options).
     "search.exclude": {
         "**/node_modules": true,
@@ -55,9 +57,6 @@
     // Controls whether editors opened from Quick Open show as preview. Preview editors are reused until they are explicitly set to be kept open (e.g. via double click or editing).
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Gruvbox Material Dark",
-    // Enabling this option will cause more tokens to be colored. By default, only the minimum but necessary tokens will be colored.
-    "gruvboxMaterial.colorfulSyntax": true,
     // Adjust the appearance of the window title bar. On Linux and Windows, this setting also affects the application and context menu appearances. Changes require a full restart to apply.
     "window.titleBarStyle": "custom",
     // Path to the conda executable to use for activation (version 4.4+).
@@ -71,5 +70,14 @@
     "gitlens.views.repositories.files.layout": "list",
     "codespaces.accountProvider": "Microsoft",
     "python.languageServer": "Pylance",
-    "python.showStartPage": false
+    "gruvboxMaterial.colorfulSyntax": true,
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "window.commandCenter": true
 }
